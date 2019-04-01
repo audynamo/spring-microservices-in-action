@@ -1,0 +1,17 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: config-server
+
+  profiles:
+    active: git
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/audynamo/config-repo
+
+    discovery:
+      enabled: true
