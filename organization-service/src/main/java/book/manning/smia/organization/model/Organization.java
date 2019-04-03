@@ -1,4 +1,4 @@
-package book.manning.smia.licenses.model;
+package book.manning.smia.organization.model;
 
 import lombok.*;
 

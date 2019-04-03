@@ -17,12 +17,7 @@ public class LicenseServiceController {
     @RequestMapping(value = "/{licenseId}", method = RequestMethod.GET)
     public License getLicense(@PathVariable("organizationId") String organizationId,
                               @PathVariable("licenseId") String licenseId) {
-        return License.builder()
-                .id(licenseId)
-                .organizationId(organizationId)
-                .productName("Teleco")
-                .licenseType("Seat")
-                .build();
+        return licenseService.getLicense(licenseId);
     }
 
     @RequestMapping(value = "/{licenseId}", method = RequestMethod.POST)
