@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuul-server
+  profiles:
+    active: default
+  cloud:
+    config:
+      enabled: true
+      name: zuul-server
+      uri: http://localhost:9999
